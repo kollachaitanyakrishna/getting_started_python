@@ -15,7 +15,7 @@ steps:
       mkdir target
       cp app.py requirements.txt target
       zip gs_python.zip target/*
-      version = `cat ./version.txt`
+      version = 11.0
 
 outputArtifacts:
   - name: gs_python
