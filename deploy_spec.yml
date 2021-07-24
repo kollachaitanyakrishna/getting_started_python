@@ -13,6 +13,11 @@ steps:
   # This section is to define the scripts that each step shall run on the instance after file copy.
   - stepType: Command
     name: Docker run
+    command: docker load -i gs_python_1.1.tar
+    runAs: root
+    timeoutInSeconds: 600
+  - stepType: Command
+    name: Docker run
     command: docker run gs_python:1.1
     runAs: root
     timeoutInSeconds: 600
