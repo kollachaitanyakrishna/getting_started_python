@@ -12,14 +12,15 @@ steps:
   - type: Command
     name: "Pack the product in zip format"
     command: |
-      docker build . -t gs_python:1.0
+      docker build . -t gs_python:1.1
+      docker save -o gs_python_1.1.tar gs_python:1.1
       version=`cat ./version.txt`
       version="1.1"
 
 outputArtifacts:
-  - name: gs_python
-    type: DOCKER_IMAGE
-    location: gs_python:1.0
+  - name: gs_python_tar
+    type: BINARY
+    location: gs_python_1.1.tar
   - name: deployspec
     type: BINARY
     location: deploy_spec.yml
