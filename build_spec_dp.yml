@@ -12,8 +12,6 @@ steps:
   - type: Command
     name: "Pack the product in zip format"
     command: |
-      docker build . -t gs_python:1.1
-      docker save -o gs_python_1.1.tar gs_python:1.1
       version=`cat ./version.txt`
       version="1.1"
 
