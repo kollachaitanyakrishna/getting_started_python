@@ -18,9 +18,9 @@ steps:
       version="1.1"
 
 outputArtifacts:
-  - name: gs_python_tar
+  - name: app
     type: BINARY
-    location: gs_python_1.1.tar
+    location: app.py
   - name: deployspec
     type: BINARY
     location: deploy_spec.yml
