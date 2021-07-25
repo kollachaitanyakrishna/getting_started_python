@@ -21,6 +21,6 @@ outputArtifacts:
     location: app.py
   - name: deployspec
     type: BINARY
-    location: deploy_spec_dp.yml
+    location: deploy_spec_py.yml
 
 
