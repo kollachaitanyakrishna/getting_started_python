@@ -18,7 +18,7 @@ steps:
     timeoutInSeconds: 600
   - stepType: Command
     name: Docker run
-    command: docker run gs_python:1.1
+    command: docker run -d gs_python:1.1
     runAs: root
     timeoutInSeconds: 600
 
